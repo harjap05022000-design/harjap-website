@@ -1,10 +1,173 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Harjap Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harjap Restaurant</title>
+<style>
+    /* Reset and basic styles */
+    body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        line-height: 1.6;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    header {
+        background-color: #ff6f61;
+        color: #fff;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #333;
+    }
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        display: block;
+    }
+    nav a:hover {
+        background-color: #ff6f61;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    .menu-category {
+        margin-bottom: 20px;
+    }
+    .menu-category h2 {
+        color: #ff6f61;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ff6f61;
+        display: inline-block;
+    }
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    .menu-item {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+    /* Responsive */
+    @media (max-width: 600px){
+        header h1 { font-size: 1.5em; }
+        nav { flex-direction: column; }
+    }
+</style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first GitHub website!</p>
+
+<header>
+    <h1>Harjap Restaurant</h1>
+    <p>Delicious food served fresh every day!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Harjap Restaurant</h2>
+    <p>Enjoy our freshly prepared Burgers, Pizzas, Soups, Shakes, Desserts and Drinks!</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-category">
+        <h2>Burgers</h2>
+        <div class="menu-items">
+            <div class="menu-item">Cheese Burger</div>
+            <div class="menu-item">Veggie Burger</div>
+            <div class="menu-item">Chicken Burger</div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Pizzas</h2>
+        <div class="menu-items">
+            <div class="menu-item">Margherita</div>
+            <div class="menu-item">Pepperoni</div>
+            <div class="menu-item">Farmhouse</div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Soups</h2>
+        <div class="menu-items">
+            <div class="menu-item">Tomato Soup</div>
+            <div class="menu-item">Veg Soup</div>
+            <div class="menu-item">Chicken Soup</div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Shakes</h2>
+        <div class="menu-items">
+            <div class="menu-item">Chocolate Shake</div>
+            <div class="menu-item">Vanilla Shake</div>
+            <div class="menu-item">Strawberry Shake</div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Desserts</h2>
+        <div class="menu-items">
+            <div class="menu-item">Ice Cream</div>
+            <div class="menu-item">Brownie</div>
+            <div class="menu-item">Cake</div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h2>Drinks</h2>
+        <div class="menu-items">
+            <div class="menu-item">Coke</div>
+            <div class="menu-item">Coffee</div>
+            <div class="menu-item">Lemonade</div>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>Email: info@harjaprestaurant.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Harjap Restaurant. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
